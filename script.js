@@ -4,3 +4,6 @@ let nicknameValue = prompt('Enter your nickname');
 if(nameValue && surnameValue && nicknameValue){
 alert('Hello ' + nameValue + surnameValue);
 }
+else{
+    alert('Hello noname');
+}
