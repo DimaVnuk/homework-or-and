@@ -1,4 +1,4 @@
-let nameValue = prompt('Enter your name');
+/* let nameValue = prompt('Enter your name');
 let surnameValue = prompt('Enter your surname');
 let nicknameValue = prompt('Enter your nickname');
 if (nameValue && surnameValue && nicknameValue) {
@@ -14,19 +14,19 @@ else if (nameValue && nicknameValue) {
     alert('Hello ' + nameValue);
 } else {
     alert('Hello Noname');
-}
+} */
 /* end case 1 */
 
-let numberValue = +prompt('Enter your number');
-let numberEven = numberValue % 2 == 0; /* четное */
-let numberOdd = numberValue % 2 !== 0; /* нечетное */
-let numberPositive = numberValue > 0; /* положитьное */
-let numberNegative = numberValue < 0; /* отрицательное */
-let numberInteger = numberValue % 1 == 0;/* целое */
-let numberFractional = numberValue % 1 !== 0;/* дробное */
-let numberIsMoreHundred = numberValue > 100; /* больше ста */
-let numberLessThanHundred = numberValue < 100; /* меньше ста */
-let numberEqualsHundred = numberValue == 100; /* равно ста */
+/* let numberValue = +prompt('Enter your number');
+let numberEven = numberValue % 2 == 0;
+let numberOdd = numberValue % 2 !== 0;
+let numberPositive = numberValue > 0; 
+let numberNegative = numberValue < 0; 
+let numberInteger = numberValue % 1 == 0;
+let numberFractional = numberValue % 1 !== 0;
+let numberIsMoreHundred = numberValue > 100; 
+let numberLessThanHundred = numberValue < 100;
+let numberEqualsHundred = numberValue == 100; 
 if(numberEven && numberPositive && numberInteger && numberIsMoreHundred){
 alert('четное, положитьное, целое, больше ста')
 }
@@ -64,5 +64,20 @@ else if(numberOdd  && numberPositive && numberFractional && numberIsMoreHundred)
     alert('нечетное,  положитьное,  дробное,   больше ста')
 }
 else {
-    alert('OOOPS, its aBUG')
-}
+    alert('OOOPS, its a BUG')
+} */
+/* 2 case */
+
+
+/* let valueNumberFirst = prompt('enter your number');
+let valueNumberSecond = prompt('enter your second number');
+let valueNumberThird = prompt('enter your third number');
+let message = valueNumberFirst ? alert(Number(valueNumberFirst) + Number(valueNumberSecond) + Number(valueNumberThird)):
+alert('Bye'); */
+
+/* case 3.1 */
+
+/* let nameValue = prompt('enter your name');
+let age = prompt('enter your age');
+let alertMessage = (age > 17) ? alert('Welcome ' + nameValue) : alert('Sorry ' + nameValue + ' access is closed'); */
+/* case 3.2 */
