@@ -14,8 +14,8 @@ else if (nameValue && nicknameValue) {
     alert('Hello ' + nameValue);
 } else {
     alert('Hello Noname');
-} */
-/* end case 1
+}
+/* end case 1 */
 
 let numberValue = +prompt('Enter your number');
 let numberEven = numberValue % 2 == 0; /* четное */
@@ -64,5 +64,5 @@ else if(numberOdd  && numberPositive && numberFractional && numberIsMoreHundred)
     alert('нечетное,  положитьное,  дробное,   больше ста')
 }
 else {
-    alert('OOOPS, its a BUG')
+    alert('OOOPS, its aBUG')
 }
