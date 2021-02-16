@@ -27,6 +27,7 @@ let numberFractional = numberValue % 1 !== 0;
 let numberIsMoreHundred = numberValue > 100;
 let numberLessThanHundred = numberValue < 100;
 let numberEqualsHundred = numberValue == 100;
+let numberEqualsZero = numberValue == 0;
 if (numberEven && numberPositive && numberInteger && numberIsMoreHundred) {
     alert('четное, положитьное, целое, больше ста')
 }
@@ -57,6 +58,9 @@ else if (numberEven && numberPositive && numberInteger && numberEqualsHundred) {
 else if (numberOdd && numberPositive && numberFractional && numberLessThanHundred) {
     alert('нечетное,  положитьное,  дробное,   меньше ста')
 }
+else if (numberEqualsZero) {
+    alert('это ноль, целое число')
+}
 else if (numberOdd && numberPositive && numberInteger && numberLessThanHundred) {
     alert('нечетное,  положитьное,  целое,   меньше ста')
 }
@@ -79,31 +83,35 @@ let age = prompt('enter your age');
 let alertMessage = (age > 17) ? alert('Welcome ' + nameValue) : alert('Sorry ' + nameValue + ' access is closed');
 /* case 3.2 */
 
-let numberUserValue = prompt('Enter your number');
-switch (numberUserValue || isNaN(numberUserValue)) {
-    case 0:
-        alert('zero');
-    case 1:
-        alert('one');
-    case 2:
-        alert('two');
-    case 3:
-        alert('three');
-    case 4:
-        alert('four');
-    case 5:
-        alert('five');
-    case 6:
-        alert('six');
-    case 7:
-        alert('seven');
-    case 8:
-        alert('eight');
-    case 9:
-        alert('nine');
-        break
-    default:
-        alert('too much')
+let numberUserValuePrompt = +prompt('Enter your number');
+if (isNaN(numberUserValuePrompt)) {
+    numberUserValuePrompt
+} else {
+    switch (numberUserValuePrompt) {
+        case 0:
+            alert('zero');
+        case 1:
+            alert('one');
+        case 2:
+            alert('two');
+        case 3:
+            alert('three');
+        case 4:
+            alert('four');
+        case 5:
+            alert('five');
+        case 6:
+            alert('six');
+        case 7:
+            alert('seven');
+        case 8:
+            alert('eight');
+        case 9:
+            alert('nine');
+            break
+        default:
+            alert('too much')
+    }
 }
 /* case 4 */
 
